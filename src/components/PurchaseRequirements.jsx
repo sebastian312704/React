@@ -54,7 +54,6 @@ const PurchaseRequirements = () => {
       <div className="contenedor-formulario">
         <h2>Requerimientos de Compra</h2>
 
-        {/* Errores */}
         {errores.length > 0 && (
           <div className="errores" style={{ backgroundColor: '#ffe5e5', padding: '10px', marginBottom: '10px', borderRadius: '5px' }}>
             <ul>

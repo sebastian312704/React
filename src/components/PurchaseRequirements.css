@@ -1,4 +1,3 @@
-/* Fondo con imagen */
 .fondo-formulario {
   background-image: url('../assets/fondo.avif');
   background-size: cover;
@@ -10,9 +9,8 @@
   padding: 2rem;
 }
 
-/* Contenedor del formulario */
 .contenedor-formulario {
-  background-color: rgba(18, 18, 18, 0.9); /* negro oscuro con opacidad */
+  background-color: rgba(18, 18, 18, 0.9); 
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
@@ -20,7 +18,7 @@
   width: 100%;
 }
 
-/* Título */
+
 .contenedor-formulario h2 {
   text-align: center;
   font-size: 1.8rem;
@@ -28,7 +26,7 @@
   color: #f0f0f0;
 }
 
-/* Etiquetas y campos */
+
 .contenedor-formulario form div {
   margin-bottom: 1.2rem;
 }
@@ -40,7 +38,7 @@
   font-weight: 500;
 }
 
-/* Inputs */
+
 .contenedor-formulario input[type="text"],
 .contenedor-formulario input[type="number"] {
   width: 100%;
@@ -60,7 +58,7 @@
   background-color: #2a2a2a;
 }
 
-/* Radio buttons */
+
 .contenedor-formulario input[type="radio"] {
   margin-right: 0.5rem;
   accent-color: #3399ff;
@@ -72,7 +70,7 @@
   color: #ddd;
 }
 
-/* Botones */
+
 .contenedor-formulario button {
   padding: 0.7rem 1.4rem;
   font-size: 1rem;

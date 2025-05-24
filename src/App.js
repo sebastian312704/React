@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PurchaseRequirements from './components/PurchaseRequirements';
-import TallerDeAutos from './components/TallerDeAutos'; // Asegurate que el path sea correcto
+import TallerDeAutos from './components/TallerDeAutos';
+import Carrito from './components/Carrito';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<PurchaseRequirements />} />
           <Route path="/taller" element={<TallerDeAutos />} />
+          <Route path="/carrito" element={<Carrito />} /> 
         </Routes>
       </div>
     </Router>

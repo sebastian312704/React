@@ -28,7 +28,6 @@ function TallerDeAutos() {
     }, 500);
   }, [pagina, todosLosProductos]);
 
-  // Configurar el IntersectionObserver
   useEffect(() => {
     if (observadorRef.current) observadorRef.current.disconnect();
 
@@ -40,11 +39,7 @@ function TallerDeAutos() {
           }
         }
       },
-      {
-        root: null, // viewport
-        rootMargin: '0px',
-        threshold: 1.0
-      }
+      { root: null, rootMargin: '0px', threshold: 1.0 }
     );
 
     if (sentinelaRef.current) {
@@ -73,6 +68,18 @@ function TallerDeAutos() {
     setTodosLosProductos(articulosTaller);
     setPagina(1);
     setProductos(articulosTaller.slice(0, productosPorPagina));
+  };
+
+  const agregarAlCarrito = producto => {
+    const carritoActual = JSON.parse(localStorage.getItem('carrito')) || [];
+    const yaExiste = carritoActual.some(p => p.id === producto.id);
+    if (!yaExiste) {
+      carritoActual.push(producto);
+      localStorage.setItem('carrito', JSON.stringify(carritoActual));
+      alert(`Agregado al carrito: ${producto.nombre}`);
+    } else {
+      alert('Este producto ya está en el carrito.');
+    }
   };
 
   return (
@@ -137,7 +144,6 @@ function TallerDeAutos() {
           {cargando && (
             <p style={{ gridColumn: '1 / -1', textAlign: 'center' }}>Cargando...</p>
           )}
-          {/* Sentinela invisible al final para scroll infinito */}
           <div ref={sentinelaRef} style={{ height: '1px', gridColumn: '1 / -1' }} />
         </main>
 
@@ -151,7 +157,7 @@ function TallerDeAutos() {
               <p><strong>Marca:</strong> {productoSeleccionado.marca}</p>
               <button
                 className="boton-agregar"
-                onClick={() => alert(`Agregado al carrito: ${productoSeleccionado.nombre}`)}
+                onClick={() => agregarAlCarrito(productoSeleccionado)}
               >
                 Agregar al carrito
               </button>
