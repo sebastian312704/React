@@ -1,0 +1,102 @@
+/* Fondo con imagen */
+.fondo-formulario {
+  background-image: url('../assets/fondo.avif');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Contenedor del formulario */
+.contenedor-formulario {
+  background-color: rgba(18, 18, 18, 0.9); /* negro oscuro con opacidad */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Título */
+.contenedor-formulario h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #f0f0f0;
+}
+
+/* Etiquetas y campos */
+.contenedor-formulario form div {
+  margin-bottom: 1.2rem;
+}
+
+.contenedor-formulario label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+  font-weight: 500;
+}
+
+/* Inputs */
+.contenedor-formulario input[type="text"],
+.contenedor-formulario input[type="number"] {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #222;
+  color: #eee;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.contenedor-formulario input[type="text"]:focus,
+.contenedor-formulario input[type="number"]:focus {
+  border-color: #3399ff;
+  outline: none;
+  background-color: #2a2a2a;
+}
+
+/* Radio buttons */
+.contenedor-formulario input[type="radio"] {
+  margin-right: 0.5rem;
+  accent-color: #3399ff;
+}
+
+.contenedor-formulario div > div label {
+  display: inline-block;
+  margin-right: 1.5rem;
+  color: #ddd;
+}
+
+/* Botones */
+.contenedor-formulario button {
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: background-color 0.3s;
+}
+
+.contenedor-formulario button[type="submit"] {
+  background-color: #3399ff;
+  color: white;
+}
+
+.contenedor-formulario button[type="submit"]:hover {
+  background-color: #1a73e8;
+}
+
+.contenedor-formulario button[type="button"] {
+  background-color: #444;
+  color: #eee;
+}
+
+.contenedor-formulario button[type="button"]:hover {
+  background-color: #666;
+}
