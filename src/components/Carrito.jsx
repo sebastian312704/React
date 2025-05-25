@@ -23,9 +23,8 @@ function Carrito() {
   const total = productos.reduce((acc, p) => acc + p.precio, 0);
 
   const realizarCompra = () => {
-    
-    localStorage.removeItem('carrito');
-    navigate('/compra-realizada');
+    localStorage.setItem('totalCompra', total); 
+    navigate('/formulario-compra'); 
   };
 
   return (

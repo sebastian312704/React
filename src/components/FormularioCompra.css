@@ -1,0 +1,98 @@
+.formulario-compra-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-compra-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.formulario-compra {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-compra label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #555;
+}
+
+.formulario-compra input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.boton-toggle {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.boton-toggle:hover {
+  text-decoration: underline;
+}
+
+.botones-formulario {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.boton-limpiar,
+.boton-confirmar {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+}
+
+.boton-limpiar {
+  background-color: #6c757d;
+}
+
+.boton-confirmar {
+  background-color: #28a745;
+}
+
+.boton-limpiar:hover {
+  background-color: #5a6268;
+}
+
+.boton-confirmar:hover {
+  background-color: #218838;
+}
+
+.boton-volver {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px 16px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.boton-volver:hover {
+  background-color: #e0e0e0;
+  border-color: #999;
+}

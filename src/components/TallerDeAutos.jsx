@@ -89,7 +89,10 @@ function TallerDeAutos() {
         <nav className="nav-botones">
           <button
             className="boton boton-cancelar"
-            onClick={() => (window.location.href = '/')}
+            onClick={() => {
+              localStorage.removeItem('carrito');
+              window.location.href = '/';
+            }}
           >
             Cancelar compra
           </button>

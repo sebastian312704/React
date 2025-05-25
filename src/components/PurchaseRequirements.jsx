@@ -34,6 +34,8 @@ const PurchaseRequirements = () => {
       return;
     }
 
+    localStorage.setItem('presupuestoMaximo', form.presupuesto);
+
     setErrores([]);
     console.log('Formulario enviado:', form);
     navigate('/taller');
